@@ -163,7 +163,7 @@ class UrlConcrete implements Url
         }
 
         if ($priority && is_numeric($priority) && $priority >= 0 && $priority <= 1) {
-            $this->priority = number_format($priority, 1);
+            $this->priority = number_format($priority, 2);
         } else {
             throw new \RuntimeException(
                 sprintf(
@@ -200,7 +200,7 @@ class UrlConcrete implements Url
         }
 
         if ($this->getPriority()) {
-            $xml .= '<priority>' . number_format($this->getPriority(), 1) . '</priority>';
+            $xml .= '<priority>' . number_format($this->getPriority(), 2) . '</priority>';
         }
 
         $xml .= '</url>';
