@@ -1,5 +1,5 @@
 {
-    "name": "presta/sitemap-bundle",
+    "name": "lephare/sitemap-bundle",
     "description": "A Symfony bundle that provides tools to build your application sitemap.",
     "keywords": ["symfony", "bundle", "sitemap", "xml", "prestaconcept"],
     "type": "symfony-bundle",
